@@ -1,0 +1,29 @@
+Problem Definition : Create a database design to represent data related students, staff members and library for a University 
+
+Database Requirements:
+
+1. The database will keep a track of University information such as students, staff members and library.
+
+2. The university keeps track of each student's name, student number, address, phone, birth date, sex, year (freshman, sophomore,..., graduate), department and degree program (B.A., B.S., M.A., M.S., ..., Ph.D.). Some user applications need to access the city, state, and zip code of the student's address and the student last name. Student ID will have unique value for each student. Each student must have up to one advisor and each advisor can advices multiple students.  Advisors are teachers and not every advisor has student/s associated with hem/her.
+
+3. The university also maintains a record of Parent information for ech student. It stores name, address, email id and contact information for each parent. Each student record must have one parent associated, whereas a parent record can have atleast one or multiple students associated to it. Parents exist in the context of students only. 
+
+4. A student can only be registered to one Program/Degree.
+
+5. Each student must enroll to atleast one and can be enrolled into multiple courses for a particular semester.
+
+6. Each department is described by an ID and Name. Both department ID and department name have unique values for each department.
+
+7. Each course has a course name, course ID, number of semester hours (credit), ID of staff member taking the course, offering department and associated program ID. Some courses have prerequisites.
+ 
+8. Employees are classified into faculty and staff and are differentiated based on the department they belong to. All administration staff are grouped under Admin deparment (administration staff include but are not limited to secretaries, program coordinators, assistant directors, directors, deans, vice presidents, and president), whereas the faculty members are allocated to there respective departments for which they offer courses. For each syaff member it keeps a track of Staff ID, name, address, phone  number, email id.
+
+9. The university maintains book ID, group ID, ISBN, name, author, edition, publisher, price of the books in it's library. Each book is identified with an ISBN number and unique school generated ID. The university also keeps a track of books issued to a student, date of issue, due date for book to be returned, date of actual return. A total number of books shall be tracked. (total available, total checked out, etc)
+
+10. The following reports are required:
+
+	List all students with books checked out showing due date and date checked out.
+	List all authorized users and their access level.
+	List all books in the system with search capabilities.
+	List of all books checked out by class or book name/number.
+	List of students and parents info with amount due
